@@ -1,0 +1,51 @@
+
+// ===================================
+// Media Query debug
+
+.mq-debug:before {
+  content: "Up to 449px";
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 2.5;
+  font-family: "SFMono-Regular", Consolas, "Lucida Console", Courier, monospace;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #df7557;
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+  .mq-debug:before {
+    content: "from 450px, up to 767px";
+    background-color: #326d4f;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mq-debug:before {
+    content: "from 768px, up to 1023px";
+    background-color: #415c9a;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .mq-debug:before {
+    content: "from 1024px, up to 1279px";
+    background-color: #944c8d;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .mq-debug:before {
+    content: "from 1280px, up to 1919px";
+    background-color: #b8386d;
+  }
+}
+
+@media (min-width: 1920px) {
+  .mq-debug:before {
+    content: "from 1920px and up";
+    background-color: #d9434e;
+  }
+}

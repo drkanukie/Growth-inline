@@ -1,0 +1,556 @@
+@charset "UTF-8";
+.mq-debug:before {
+  content: "Up to 449px";
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 2.5;
+  font-family: "SFMono-Regular", Consolas, "Lucida Console", Courier, monospace;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #df7557;
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+  .mq-debug:before {
+    content: "from 450px, up to 767px";
+    background-color: #326d4f;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mq-debug:before {
+    content: "from 768px, up to 1023px";
+    background-color: #415c9a;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .mq-debug:before {
+    content: "from 1024px, up to 1279px";
+    background-color: #944c8d;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .mq-debug:before {
+    content: "from 1280px, up to 1919px";
+    background-color: #b8386d;
+  }
+}
+
+@media (min-width: 1920px) {
+  .mq-debug:before {
+    content: "from 1920px and up";
+    background-color: #d9434e;
+  }
+}
+
+.standfirst::after {
+  content: "Around every corner in Paris, you’ll find something unmissable: an ancient church, a gallery of modern art, or even just a dingy little bar which is the perfect spot if you have a passion for jazz. Nevertheless, there are some sights that every visitor must see. Below are the French capital’s 20 biggest attractions, after which every other discovery is a bonus.";
+}
+
+.eiffel::after {
+  content: "Gustave Eiffel’s wrought iron tower is undoubtedly Paris’s most famous attraction. Completed in 1889 as the centerpiece of that years Exposition Universelle, the tower stands at 324 meters and is the tallest structure in the capital. Around 6.9 million people pay to climb the tower every year and plans are afoot to renovate it in order to bring down waiting times.";
+}
+
+.arc::after {
+  content: "Originally conceived by Napoleon in 1806 to commemorate his army’s victory at the Battle of Austerlitz, the Arc de Triomphe, the largest triumphal arch in the world, took 30 years to complete. The eternal flame, which is located beneath the Arcs sculpted vault and above the Tomb of the Unknown Soldier, has been relit every day at 6:30 p.m. since November 11, 1923.";
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  margin: 12px;
+  font-family: ProximaNova-Book, sans-serif;
+  font-weight: 400;
+  color: #363636;
+}
+
+a {
+  color: #4099ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p,
+li {
+  letter-spacing: -0.5px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.standfirst {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: ProximaNova-Semibold, sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 26px;
+  -webkit-margin-after: 19.92px;
+  -webkit-margin-before: 19.92px;
+}
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  margin: 3px;
+  color: #ffffff;
+}
+
+.fb {
+  background: #3b5998;
+}
+
+.tw {
+  background: #4099ff;
+}
+
+.pin {
+  background: #cb2027;
+}
+
+.email {
+  background: #d0d0d0;
+}
+
+.featured {
+  background: no-repeat center center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://img.theculturetrip.com/840x440/smart/wp-content/uploads/2017/04/view-from-the-eiffel-tower--jjandson-pixabay-1024x576.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://img.theculturetrip.com/840x440/smart/wp-content/uploads/2017/04/view-from-the-eiffel-tower--jjandson-pixabay-1024x576.jpg);
+  background-size: cover;
+  height: 440px;
+  padding: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.featured .title {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 56px;
+  font-family: ProximaNova-Semibold, sans-serif;
+  text-align: center;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 20px;
+}
+
+.byline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 6px;
+}
+
+.byline .author {
+  font-family: ProximaNova-Semibold, sans-serif;
+  font-size: 12px;
+  line-height: 14.4px;
+  margin: 0;
+}
+
+.byline .date {
+  font-family: ProximaNova-Regular, sans-serif;
+  font-size: 9.75px;
+  line-height: 14.4px;
+  margin: 0;
+}
+
+.avatar {
+  background: url(https://0gravatar.com/avatar/5682dcc6298f8f2be186a692c73bb156?s=50&d=https://cdn.theculturetrip.com/logo/logo50.png&r=g) no-repeat center center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+section {
+  width: 768px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    width: 100%;
+  }
+}
+
+section.break {
+  width: 100%;
+  background: #ffffff;
+  padding: 18px 0;
+}
+
+section.break h2 {
+  color: #707070;
+  margin: 0 12px;
+  font-weight: 300;
+}
+
+section.break h1 {
+  margin: 0 12px;
+}
+
+.test-banner {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .test-banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.test-banner-body {
+  padding: 16px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.test-banner-body__title {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.test-banner-body__excerpt {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  color: #363636;
+}
+
+.test-banner-body__button {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: visibile;
+  font-size: 16px;
+  line-height: 1.15;
+  margin: 0 0 16px 0;
+  padding: 12px 18px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #363636;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.test-banner-img {
+  background: url(https://cdn.theculturetrip.com/wp-content/uploads/2015/11/eur-france-paris.JPG) no-repeat center center;
+  background-size: cover;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .test-banner-img {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 166px;
+  }
+}
+
+.test-inline {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.test-inline p {
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.test-textlinks {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  padding-top: 6px;
+}
+
+.test-textlinks p {
+  font-weight: 600;
+}
+
+.test-textlinks ul {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-bottom: 24px;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .test-textlinks .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+  }
+}
+
+.test-textlinks ul li {
+  margin-bottom: 6px;
+}
+
+.test-iconlinks {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.test-iconlinks p {
+  font-weight: 600;
+}
+
+.test-iconlinks ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .test-iconlinks .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.test-iconlinks ul li {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.test-iconlinks .icon {
+  fill: #707070;
+  cursor: pointer;
+}
+
+.test-iconlinks a {
+  margin-left: 18px;
+  line-height: 1.15;
+}
+
+.test-thumblinks {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.test-thumblinks p {
+  font-weight: 600;
+}
+
+.test-thumblinks ul {
+  list-style: none;
+  margin: 0 0 6px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .test-thumblinks ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.test-thumblinks ul li {
+  width: 33.3%;
+  padding: 0 0 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .test-thumblinks ul li {
+    width: 100%;
+  }
+}
+
+.test-thumblinks .thumb {
+  background: no-repeat center center;
+  background-size: cover;
+  min-width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .test-thumblinks .thumb {
+    min-width: 177px;
+  }
+}
+
+.test-thumblinks .art {
+  background-image: url(https://img.theculturetrip.com/731x440/smart/wp-content/uploads/2018/01/1280px-louvre_pyramid-650x433-1.jpg);
+}
+
+.test-thumblinks .place {
+  background-image: url(https://cdn.theculturetrip.com/wp-content/uploads/2016/09/a-room-at-the-htel-grand-amour--courtesy-of-the-htel-grand-amour.jpg);
+}
+
+.test-thumblinks .see {
+  background-image: url(https://img.theculturetrip.com/731x440/smart/wp-content/uploads/2017/06/catacombs-2109028_1920-1024x578.jpg);
+}
+
+.test-thumblinks ul li a {
+  line-height: 1.15;
+}
+
+.test-thumblinks a {
+  margin: 0 12px;
+}
+
+.test-quote {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 18px 0;
+}
+
+.test-quote .avatar {
+  margin-left: 18px;
+  min-width: 50px;
+}
+
+.test-quote .body {
+  font-size: 24px;
+  line-height: 1.15;
+  color: #707070;
+  margin: 0;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .test-quote .body {
+    font-size: 21px;
+  }
+}

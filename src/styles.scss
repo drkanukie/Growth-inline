@@ -1,0 +1,291 @@
+
+@import "vars.scss";
+@import "mq.scss";
+@import "content.scss";
+@import "culture.scss";
+
+// ===================================
+// Test Layout
+
+section {
+  width: 768px;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+section.break {
+  width: 100%;
+  background: $white;
+  padding: 18px 0;
+}
+
+section.break h2 {
+  color: $dove-gray;
+  margin: 0 12px;
+  font-weight: 300;
+}
+
+section.break h1 {
+  margin: 0 12px;
+}
+
+
+// ===================================
+// Tests
+//
+
+// BANNER
+
+.test-banner {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-body {
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-body__title {
+    margin: 0 0 16px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &-body__excerpt {
+    margin: 0;
+    font-size: 13px;
+    line-height: $line-normal;
+    text-align: center;
+    color: #363636;
+  }
+
+  &-body__button {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: visibile;
+    font-size: 16px;
+    line-height: $line-tight;
+    margin: 0 0 16px 0;
+    padding: 12px 18px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+    background-color: $mineshaft;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &-img {
+    background: url(https://cdn.theculturetrip.com/wp-content/uploads/2015/11/eur-france-paris.JPG)
+      no-repeat center center;
+    background-size: cover;
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      order: -1;
+      height: 166px; // mobile use fixed height hack
+    }
+  }
+}
+
+// INLINE
+
+.test-inline {
+  border-top: $divider-height solid $divider-color;
+  border-bottom: $divider-height solid $divider-color;
+
+  & p {
+    font-size: 21px;
+    font-weight: 500;
+    text-align: $inline-justify;
+  }
+}
+
+// 3 LINKS
+
+.test-textlinks {
+  border-top: $divider-height solid $divider-color;
+  border-bottom: $divider-height solid $divider-color;
+  padding-top: $grid;
+
+  & p {
+    font-weight: 600;
+  }
+
+  & ul {
+    list-style-type: square;
+    list-style-position: inside;
+    //border: 1px solid red;
+    margin-bottom: 4 * $grid;
+    padding-left: 0;
+  }
+
+  & .row {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+    }
+  }
+
+  & ul li {
+    //border: 1px solid red;
+    margin-bottom: $grid;
+  }
+}
+
+.test-iconlinks {
+  border-top: $divider-height solid $divider-color;
+  border-bottom: $divider-height solid $divider-color;
+
+  & p {
+    font-weight: 600;
+  }
+
+  & ul {
+    list-style: none;
+    padding-left: 0;
+    //border: 1px solid red;
+    margin-bottom: 4 * $grid;
+  }
+
+  & .row {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  & ul li {
+    //border: 1px solid red;
+    margin-bottom: 2 * $grid;
+    display: flex;
+    align-items: center;
+  }
+
+  & .icon {
+    fill: $icon-color;
+    cursor: pointer;
+  }
+
+  & a {
+    margin-left: 3 * $grid;
+    line-height: $line-tight;
+  }
+}
+
+// 3 THUMBS
+
+.test-thumblinks {
+  border-top: $divider-height solid $divider-color;
+  border-bottom: $divider-height solid $divider-color;
+
+  & p {
+    font-weight: 600;
+  }
+
+  & ul {
+    list-style: none;
+    //border: 1px solid red;
+    margin: 0 0 $grid 0;
+    padding: 0;
+    display: flex;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  & ul li {
+    width: 33.3%;
+    padding: 0 0 2 * $grid 0;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  & .thumb {
+    background: no-repeat center center;
+    background-size: cover;
+    min-width: 100px;
+    height: 100px;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      min-width: 1.77 * 100px;
+    }
+  }
+
+  & .art {
+    background-image: url(https://img.theculturetrip.com/731x440/smart/wp-content/uploads/2018/01/1280px-louvre_pyramid-650x433-1.jpg);
+  }
+
+  & .place {
+    background-image: url(https://cdn.theculturetrip.com/wp-content/uploads/2016/09/a-room-at-the-htel-grand-amour--courtesy-of-the-htel-grand-amour.jpg);
+  }
+
+  & .see {
+    background-image: url(https://img.theculturetrip.com/731x440/smart/wp-content/uploads/2017/06/catacombs-2109028_1920-1024x578.jpg);
+  }
+
+  & ul li a {
+    line-height: $line-tight;
+  }
+
+  & a {
+    margin: 0 2 * $grid;
+  }
+}
+
+// QUOTE
+
+.test-quote {
+  border-top: $divider-height solid $divider-color;
+  border-bottom: $divider-height solid $divider-color;
+  display: flex;
+  align-items: center;
+
+  // xp
+  justify-content: flex-end;
+  padding: 3 * $grid 0;
+
+  & .avatar {
+    //margin-right: 3 * $grid;
+
+    //xp
+    margin-left: 3 * $grid;
+    min-width: 50px;
+  }
+
+  & .body {
+    font-size: $quote-size;
+    line-height: $line-tight;
+    color: $dove-gray;
+    margin: 0;
+    order: -1;
+
+    //xp
+    text-align: $quote-justify;
+
+    @media screen and (max-width: 768px) {
+      font-size: $inline-size;
+    }
+  }
+}

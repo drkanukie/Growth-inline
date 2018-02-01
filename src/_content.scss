@@ -1,0 +1,15 @@
+
+// ===================================
+// Static text content
+//
+.standfirst::after {
+  content: "Around every corner in Paris, you’ll find something unmissable: an ancient church, a gallery of modern art, or even just a dingy little bar which is the perfect spot if you have a passion for jazz. Nevertheless, there are some sights that every visitor must see. Below are the French capital’s 20 biggest attractions, after which every other discovery is a bonus.";
+}
+
+.eiffel::after {
+  content: "Gustave Eiffel’s wrought iron tower is undoubtedly Paris’s most famous attraction. Completed in 1889 as the centerpiece of that years Exposition Universelle, the tower stands at 324 meters and is the tallest structure in the capital. Around 6.9 million people pay to climb the tower every year and plans are afoot to renovate it in order to bring down waiting times.";
+}
+
+.arc::after {
+  content: "Originally conceived by Napoleon in 1806 to commemorate his army’s victory at the Battle of Austerlitz, the Arc de Triomphe, the largest triumphal arch in the world, took 30 years to complete. The eternal flame, which is located beneath the Arcs sculpted vault and above the Tomb of the Unknown Soldier, has been relit every day at 6:30 p.m. since November 11, 1923.";
+}

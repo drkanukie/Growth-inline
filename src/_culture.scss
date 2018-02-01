@@ -1,0 +1,149 @@
+// ===================================
+// Culture Trip Components
+//
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg;
+  margin: 2 * $grid;
+  font-family: ProximaNova-Book, sans-serif;
+  font-weight: 400;
+  color: $text-body;
+}
+
+// Fake content styles
+
+a {
+  color: $text-link;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p,
+li {
+  letter-spacing: -0.5px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.standfirst {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: ProximaNova-Semibold, sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 26px;
+
+  -webkit-margin-after: 19.92px;
+  -webkit-margin-before: 19.92px;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  margin: 3px;
+  color: $white;
+}
+
+.fb {
+  background: #3b5998;
+}
+
+.tw {
+  background: #4099ff;
+}
+
+.pin {
+  background: #cb2027;
+}
+
+.email {
+  background: #d0d0d0;
+}
+
+
+.featured {
+  background: no-repeat center center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://img.theculturetrip.com/840x440/smart/wp-content/uploads/2017/04/view-from-the-eiffel-tower--jjandson-pixabay-1024x576.jpg);
+  background-size: cover;
+  //width: 714px;
+  height: 440px;
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+
+  & .title {
+    font-size: 48px;
+    color: $white;
+    font-weight: 400;
+    line-height: 56px;
+    font-family: ProximaNova-Semibold, sans-serif;
+    text-align: center;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $mercury;
+  padding-bottom: 20px;
+}
+
+.byline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: $grid;
+
+  & .author {
+    font-family: ProximaNova-Semibold, sans-serif;
+    font-size: 12px;
+    line-height: 14.4px;
+    margin: 0;
+  }
+
+  & .date {
+    font-family: ProximaNova-Regular, sans-serif;
+    font-size: 9.75px;
+    line-height: 14.4px;
+    margin: 0;
+  }
+}
+
+.avatar {
+  background: url(https://0gravatar.com/avatar/5682dcc6298f8f2be186a692c73bb156?s=50&d=https://cdn.theculturetrip.com/logo/logo50.png&r=g)
+    no-repeat center center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}

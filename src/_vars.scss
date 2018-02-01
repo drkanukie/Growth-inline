@@ -1,0 +1,41 @@
+// ===================================
+// Colors
+//
+$mineshaft: #363636;
+$dove-gray: #707070;
+$silver: #cbcbcb;
+$mercury: #e8e8e8;
+$wild-sand: #f4f4f4;
+$link-blue: #4099ff;
+$cornflower-blue: #6071ff;
+$white: #ffffff;
+$black: #000000;
+
+// ===================================
+// Layout
+//
+$grid: 6px;
+$bg: $wild-sand;
+
+// Text
+//
+$line-tight: 1.15;
+$line-normal: 1.2;
+$line-loose: 1.5;
+$text-body: $mineshaft;
+$text-placeholder: $dove-gray;
+$text-link: $link-blue;
+
+// Divider
+//
+$divider-color: $silver;
+$divider-height: 1px;
+$icon-color: $dove-gray;
+//$divider-light: rgba(0, 0, 0, 0.1);
+//$divider-light: $white;
+
+$inline-size: 21px;
+$quote-size: 24px;
+
+$inline-justify: center;
+$quote-justify: right;
