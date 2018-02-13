@@ -143,12 +143,29 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/src\/index.html",
+		"oF": 0
+		},
 	"\/src\/index.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/src\/index.html",
 		"oF": 0
+		},
+	"\/src\/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/src\/styles.scss": {
 		"aP": 1,
